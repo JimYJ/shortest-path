@@ -13,11 +13,9 @@ let maps = [
 ]
 let dis = new Array(maps.length)
 let choosed = new Array(maps.length)
-let last = new Array(maps.length)
 // 初始化距离和已选择的点
 for (i = 0; i < maps.length; i++) {
     choosed[i] = false
-    last[i] = -1
     dis[i] = INF
 }
 
@@ -57,7 +55,6 @@ function Dijkstra2(maps) {
             }
             if (maps[newPoint][i] < INF) {
                 if (dis[i] > dis[newPoint] + maps[newPoint][i]) {
-                    last[i] = newPoint
                     dis[i] = dis[newPoint] + maps[newPoint][i]
                 }
             }
