@@ -1,9 +1,6 @@
 let INF = Number.POSITIVE_INFINITY
 let n = 9
 // 地图矩阵
-// let startPiont = new Array(0, 0, 1, 1, 2, 2, 3, 4, 4, 4, 5, 6, 7)
-// let endPoint = new Array(1, 2, 3, 4, 4, 5, 6, 6, 7, 8, 7, 8, 8)
-// let weight = new Array(5, 6, 11, 10, 8, 15, 5, 2, 7, -1, 15, 3, 22)
 let startPiont = new Array(0, 1, 1, 2, 2, 3, 4, 4, 4, 5, 6, 7, 1)
 let endPoint = new Array(2, 3, 4, 4, 5, 6, 6, 7, 8, 7, 8, 8, 0)
 let weight = new Array(6, 11, 10, 8, 15, 5, 2, 7, 15, 15, 3, 22, 5)
